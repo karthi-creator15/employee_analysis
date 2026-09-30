@@ -1,0 +1,6 @@
+department_id,department,budget,division_head,target_headcount
+1,IT,18000000,Head of Technology,250
+2,Finance,12000000,Finance Director,120
+3,HR,9000000,HR Director,100
+4,Sales,15000000,Sales Director,180
+5,Marketing,10000000,Marketing Director,120
