@@ -32,18 +32,6 @@ python scripts\download_dataset.py
 python -m src.main
 ```
 
-## Outputs
-After execution:
-
-- `data/raw/employees.csv`
-- `data/raw/departments.csv`
-- `data/processed/cleaned_employees.csv`
-- `outputs/charts/` — five PNG charts
-- `outputs/reports/analysis_report.md`
-- `outputs/analysis_summary.json`
-- `outputs/analysis_summary.txt`
-- `outputs/api_cache.json`
-
 ## OOP Design
 - `DataLoader`: ingestion and schema validation
 - `BaseDataProcessor`: abstract processing contract
@@ -53,24 +41,6 @@ After execution:
 - `VisualizationManager`: five Matplotlib charts
 - `APIClient`: resilient REST API integration and JSON cache
 - `ReportGenerator`: Markdown, JSON and text reports
-
-## Assessment demonstration checklist
-1. CSV load
-2. Dataset inspection
-3. Cleaning and type casting
-4. Duplicate removal
-5. Missing-value imputation
-6. NumPy arrays and dot product
-7. Pandas indexing/filtering
-8. GroupBy aggregations
-9. Relational merge
-10. REST API request
-11. Timeout/error handling
-12. JSON metrics
-13. Five charts
-14. Five data-driven findings
-15. Markdown report
-16. Git branches and commits
 
 ## Git workflow
 ```bash
@@ -104,6 +74,3 @@ git add src/reports
  git commit -m "feat: generate executive analysis reports"
 git checkout main
 ```
-
-## Notes for the live demo
-Show the source dataset before cleaning, then run the pipeline. Explain why median imputation is used for numeric values, why a left join preserves every cleaned employee record, how broadcasting applies a scalar factor across an array, and how the API client prevents a network failure from terminating the pipeline.
